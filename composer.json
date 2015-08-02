@@ -1,0 +1,42 @@
+{
+    "name": "root/dashboard",
+    "authors": [
+        {
+            "name": "Flyingmana",
+            "email": "flyingmana@googlemail.com"
+        }
+    ],
+    "require": {
+        "magento/product-community-edition": "1.0.0-beta"
+    },
+    "config": {
+        "use-include-path": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Magento\\Framework\\": "lib/internal/Magento/Framework/",
+            "Magento\\Setup\\": "setup/src/Magento/Setup/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Magento\\Sniffs\\": "dev/tests/static/framework/Magento/Sniffs/",
+            "Magento\\Tools\\": "dev/tools/Magento/Tools/",
+            "Magento\\Tools\\Sanity\\": "dev/build/publication/sanity/Magento/Tools/Sanity/",
+            "Magento\\TestFramework\\Inspection\\": "dev/tests/static/framework/Magento/TestFramework/Inspection/",
+            "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
+        }
+    },
+    "extra": {
+      "magento-force": true,
+      "magento-root-dir": "build"
+    },
+    "minimum-stability": "alpha",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.magento.com/"
+        }
+    ]
+}

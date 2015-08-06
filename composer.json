@@ -38,5 +38,8 @@
             "type": "composer",
             "url": "http://packages.magento.com/"
         }
-    ]
+    ],
+    "require-dev": {
+        "raulfraile/ladybug": "^1.0"
+    }
 }

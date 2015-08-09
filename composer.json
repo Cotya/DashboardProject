@@ -7,7 +7,8 @@
         }
     ],
     "require": {
-        "magento/product-community-edition": "1.0.0-beta"
+        "magento/product-community-edition": "1.0.0-beta",
+        "symfony/event-dispatcher": "^2.7"
     },
     "config": {
         "use-include-path": true

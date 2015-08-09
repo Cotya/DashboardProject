@@ -14,17 +14,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Magento\\Framework\\": "lib/internal/Magento/Framework/",
-            "Magento\\Setup\\": "setup/src/Magento/Setup/"
+            "Magento\\Framework\\": "build/lib/internal/Magento/Framework/",
+            "Magento\\Setup\\": "build/setup/src/Magento/Setup/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Magento\\Sniffs\\": "dev/tests/static/framework/Magento/Sniffs/",
-            "Magento\\Tools\\": "dev/tools/Magento/Tools/",
-            "Magento\\Tools\\Sanity\\": "dev/build/publication/sanity/Magento/Tools/Sanity/",
-            "Magento\\TestFramework\\Inspection\\": "dev/tests/static/framework/Magento/TestFramework/Inspection/",
-            "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
+            "Magento\\Sniffs\\": "build/dev/tests/static/framework/Magento/Sniffs/",
+            "Magento\\Tools\\": "build/dev/tools/Magento/Tools/",
+            "Magento\\Tools\\Sanity\\": "build/dev/build/publication/sanity/Magento/Tools/Sanity/",
+            "Magento\\TestFramework\\Inspection\\": "build/dev/tests/static/framework/Magento/TestFramework/Inspection/",
+            "Magento\\TestFramework\\Utility\\": "build/dev/tests/static/framework/Magento/TestFramework/Utility/"
         }
     },
     "extra": {

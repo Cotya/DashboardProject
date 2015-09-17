@@ -8,7 +8,8 @@
     ],
     "require": {
         "magento/product-community-edition": "1.0.0-beta2",
-        "symfony/event-dispatcher": "^2.7"
+        "symfony/event-dispatcher": "^2.7",
+        "league/oauth2-client": "0.7.*"
     },
     "config": {
         "use-include-path": true

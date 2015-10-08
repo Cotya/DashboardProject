@@ -1,3 +1,4 @@
 body {
     border: 5px dashed mediumvioletred;
+    border-bottom: none;
 }

@@ -11,7 +11,8 @@
         "symfony/event-dispatcher": "^2.7",
         "league/oauth2-client": "0.7.*",
         "symfony/web-profiler-bundle": "~2.7",
-        "composer/semver": "^0.1.0@dev"
+        "composer/semver": "^0.1.0@dev",
+        "knplabs/github-api": "^1.4@dev"
     },
     "config": {
         "use-include-path": true

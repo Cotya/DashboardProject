@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "magento/product-community-edition": "1.0.0-beta4",
+        "magento/product-community-edition": "2.0.0-rc",
         "symfony/event-dispatcher": "^2.7",
         "league/oauth2-client": "0.7.*",
         "symfony/web-profiler-bundle": "~2.7",
@@ -18,13 +18,20 @@
         "use-include-path": true
     },
     "autoload": {
+        "classmap": [
+          "app_local/rewrite/"
+        ],
         "psr-4": {
             "Magento\\Framework\\": "build/lib/internal/Magento/Framework/",
             "Magento\\Setup\\": "build/setup/src/Magento/Setup/"
         }
     },
     "autoload-dev": {
+        "files": [
+            "build/app/etc/NonComposerComponentRegistration.php"
+        ],
         "psr-4": {
+            "Cotya\\": "build/app/code/Cotya/",
             "Magento\\Sniffs\\": "build/dev/tests/static/framework/Magento/Sniffs/",
             "Magento\\Tools\\": "build/dev/tools/Magento/Tools/",
             "Magento\\Tools\\Sanity\\": "build/dev/build/publication/sanity/Magento/Tools/Sanity/",
@@ -35,6 +42,9 @@
     "extra": {
       "magento-force": true,
       "magento-root-dir": "build"
+    },
+    "config": {
+      "vendor-dir": "build/vendor_dir"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "magento/product-community-edition": "2.0.0-rc",
+        "magento/product-community-edition": "2.0.0",
         "symfony/event-dispatcher": "^2.7",
         "league/oauth2-client": "0.7.*",
         "symfony/web-profiler-bundle": "~2.7",
@@ -15,9 +15,13 @@
         "knplabs/github-api": "^1.4@dev"
     },
     "config": {
+        "vendor-dir": "build/vendor_dir",
         "use-include-path": true
     },
     "autoload": {
+        "files": [
+          "build/app/etc/NonComposerComponentRegistration.php"
+        ],
         "classmap": [
           "app_local/rewrite/"
         ],
@@ -27,9 +31,6 @@
         }
     },
     "autoload-dev": {
-        "files": [
-            "build/app/etc/NonComposerComponentRegistration.php"
-        ],
         "psr-4": {
             "Cotya\\": "build/app/code/Cotya/",
             "Magento\\Sniffs\\": "build/dev/tests/static/framework/Magento/Sniffs/",
@@ -42,9 +43,6 @@
     "extra": {
       "magento-force": true,
       "magento-root-dir": "build"
-    },
-    "config": {
-      "vendor-dir": "build/vendor_dir"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

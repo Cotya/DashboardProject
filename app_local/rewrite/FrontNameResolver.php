@@ -5,7 +5,7 @@
  * Copyright © 2015 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Magento\Backend\App\Area;
+namespace never\Magento\Backend\App\Area;
 
 use Magento\Backend\Setup\ConfigOptionsList;
 use Magento\Framework\App\Config\ScopeConfigInterface;

@@ -20,19 +20,20 @@
     },
     "autoload": {
         "files": [
-          "build/app/etc/NonComposerComponentRegistration.php"
+          "build/app/etc/NonComposerComponentRegistration.php",
+          "app_local/NonComposerComponentRegistration.php"
         ],
         "classmap": [
           "app_local/rewrite/"
         ],
         "psr-4": {
+            "Cotya\\": "app_local/code/Cotya/",
             "Magento\\Framework\\": "build/lib/internal/Magento/Framework/",
             "Magento\\Setup\\": "build/setup/src/Magento/Setup/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Cotya\\": "build/app/code/Cotya/",
             "Magento\\Sniffs\\": "build/dev/tests/static/framework/Magento/Sniffs/",
             "Magento\\Tools\\": "build/dev/tools/Magento/Tools/",
             "Magento\\Tools\\Sanity\\": "build/dev/build/publication/sanity/Magento/Tools/Sanity/",

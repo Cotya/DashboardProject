@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bbf97085e9bfb70181d1ab1fa1d3b60a",
-    "content-hash": "e24eabb7cd22a5b43566eb79d899a2c1",
+    "hash": "34f6f759b517e2d634b9138cbeb992bc",
+    "content-hash": "ee247116075a51b19eafe852bc27a084",
     "packages": [
         {
             "name": "braintree/braintree_php",
@@ -5017,51 +5017,6 @@
             "description": "eCommerce Platform for Growth (Community Edition)"
         },
         {
-            "name": "magento/project-community-edition",
-            "version": "2.0.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://repo.magento.com/archives/magento/project-community-edition/magento-project-community-edition-2.0.2.0.zip",
-                "reference": null,
-                "shasum": "1475df72f03544d2be8d1318daac1c901e21da83"
-            },
-            "require": {
-                "composer/composer": "@alpha",
-                "magento/product-community-edition": "2.0.2"
-            },
-            "require-dev": {
-                "fabpot/php-cs-fixer": "~1.2",
-                "lusitanian/oauth": "~0.3 <=0.7.0",
-                "pdepend/pdepend": "2.2.2",
-                "phpmd/phpmd": "@stable",
-                "phpunit/phpunit": "4.1.0",
-                "sjparkinson/static-review": "~4.1",
-                "squizlabs/php_codesniffer": "1.5.3"
-            },
-            "type": "project",
-            "extra": {
-                "magento-force": "override"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Magento\\Framework\\": "lib/internal/Magento/Framework/",
-                    "Magento\\Setup\\": "setup/src/Magento/Setup/",
-                    "Magento\\": "app/code/Magento/"
-                },
-                "psr-0": {
-                    "": "app/code/"
-                },
-                "files": [
-                    "app/etc/NonComposerComponentRegistration.php"
-                ]
-            },
-            "license": [
-                "OSL-3.0",
-                "AFL-3.0"
-            ],
-            "description": "eCommerce Platform for Growth (Community Edition)"
-        },
-        {
             "name": "magento/theme-adminhtml-backend",
             "version": "100.0.3",
             "dist": {
@@ -8236,7 +8191,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "composer/semver": 20,
-        "knplabs/github-api": 20
+        "knplabs/github-api": 20,
+        "composer/composer": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,

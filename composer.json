@@ -7,7 +7,7 @@
         }
     ],
     "require": {
-        "magento/project-community-edition": "^2.0",
+        "magento/product-community-edition": "^2.0",
         "symfony/event-dispatcher": "^2.7",
         "league/oauth2-client": "0.7.*",
         "symfony/web-profiler-bundle": "~2.7",
